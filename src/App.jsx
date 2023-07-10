@@ -25,7 +25,7 @@ const App = () => {
   // console.log(state);
   useEffect(() => {
     const dataFromLS_Cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const dataFromLS_Wishlist = JSON.parse(localStorage.getItem('cart')) || [];
+    const dataFromLS_Wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
     dispatch({type:'UPDATE_CART',payload:dataFromLS_Cart})
     dispatch({type:'UPDATE_WISHLIST',payload:dataFromLS_Wishlist})
   }, [])
